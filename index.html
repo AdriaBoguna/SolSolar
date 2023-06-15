@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icono -->
+    <link rel="icon" type="image/png" href="src/sol.png">
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- Enlace a jQuery y Bootstrap JS -->
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- librería AOS y Font Awesome-->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link defer href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Enlace al archivo CSS y JS -->
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="header.js"></script>
+    <title>Sol Solar</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="src/log.png" alt="Logo" width="80" height="55" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-2">
+              <li class="nav-item space">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item space">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item space">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item space">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="idioma" role="button" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                Idioma <img src="src/españa.png" alt="Idioma" id="bandera-idioma" height="20px">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="idioma">
+                  <a class="dropdown-item" href="#" data-bandera="src/catalunya.png">
+                    <img src="src/catalunya.png" alt="Catalán" height="20px"> Català
+                  </a>
+                  <a class="dropdown-item" href="#" data-bandera="src/españa.png">
+                    <img src="src/españa.png" alt="Castellano" height="20px"> Castellano
+                  </a>
+                  <a class="dropdown-item" href="#" data-bandera="src/america.png">
+                    <img src="src/reino-unido.png" alt="Inglés" height="20px"> English
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link phone" href="tel:1234567890">123-456-7890</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="parallax section-transition">
+      <div class="centrado">
+        <h1><strong>Empresa Líder en <br>Instalaciones Solares Termicás</strong></h1>
+      </div>
+    </section>
+    <section class="container my-5 section-transition" data-aos="fade-up">
+        
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h1 class="display-4 title-line mb-5">Soluciones renovables</h1>
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <img
+            src="src/fot.jpg"
+            class="img-fluid"
+            alt="Descripción de la imagen 1"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2>Energía Solar Fotovoltaica</h2>
+          <p>
+            Las placas solares fotovoltaicas son una forma eficiente de generar
+            energía eléctrica a partir de la radiación solar. Con su
+            instalación, podemos reducir nuestra dependencia de los combustibles
+            fósiles y disminuir nuestra huella de carbono.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-lg-2">
+          <img
+            src="src/termica.jpg"
+            class="img-fluid"
+            alt="Descripción de la imagen 2"
+          />
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2>Energía Solar Térmica</h2>
+          <p>
+            Las placas solares térmicas son una tecnología limpia y renovable
+            que aprovecha la radiación solar para producir calor, lo que se
+            traduce en importantes beneficios tanto económicos como
+            medioambientales. Con su instalación, podemos reducir nuestra
+            dependencia de los combustibles fósiles y disminuir nuestra huella
+            de carbono.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <img
+            src="src/aero.jpeg"
+            class="img-fluid"
+            alt="Descripción de la imagen 3"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2>Aerotermia</h2>
+          <p>
+            La aerotermia es una solución de climatización eficiente y
+            sostenible que aprovecha la energía del aire para calentar o enfriar
+            tu hogar o negocio. En Energía Renovable SolSolar, ofrecemos
+            sistemas de aerotermia personalizados que te ayudarán a ahorrar
+            energía, reducir tus facturas y disminuir tu huella de carbono.
+            Confort, ahorro y respeto por el medio ambiente, todo en uno.
+            Descubre las ventajas de la aerotermia con nosotros.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <section style="background-color: #efefef" class="section-transition" data-aos="fade-up">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h2 class="display-4 mb-3 title-size">App de monitorización incluida en todas nuestras instalaciones</h2>
+                    <p>Aprovecha al máximo tu instalación adaptando tu consumo a la energía que generas.</p>
+                    <a href="#" class="btn btn-primary mt-3 learn-more">Saber más</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="src/app.jpeg" class="img-fluid" alt="Imagen de la aplicación de monitorización">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="container my-5 section-transition" id="proyectos" data-aos="fade-up">
+        <h2 class="text-center display-4 mb-5 project">Trabajos realizados</h2>
+        <div class="line"></div>
+        <div id="carouselProyectos" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <article class="col-md-4">
+                            <img src="src/Car.jpg" class="d-block w-100" alt="Proyecto 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Instalación solar térmica en el Car de Sant Cugat | Barcelona</h5>
+                                <p>Ahorro: 280.000 kWh/año</p>
+                            </div>
+                        </article>
+                        <article class="col-md-4">
+                            <img src="src/Calella.jpeg" class="d-block w-100" alt="Proyecto 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Instalación solar térmica en Piscina municipal | Maresme (Barcelona)</h5>
+                                <p>Ahorro: 500.000 kWh/año</p>
+                            </div>
+                        </article>
+                        <article class="col-md-4">
+                            <img src="src/CanToda.JPG" class="d-block w-100" alt="Proyecto 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Instalación solar térmica en Can Toda | BARCELONA</h5>
+                                <p>Descripción del Proyecto 3.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <article class="col-md-4">
+                            <img src="src/Codorniu.jpg" class="d-block w-100" alt="Proyecto 4">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Instalación solar térmica en Codorniu | Barcelona</h5>
+                                <p>Descripción del Proyecto 4.</p>
+                            </div>
+                        </article>
+                        <article class="col-md-4">
+                            <img src="src/terrassa.jpg" class="d-block w-100" alt="Proyecto 5">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Reparación y mantenimiento en Terrassa | Barcelona</h5>
+                                <p>Descripción del Proyecto 5.</p>
+                            </div>
+                        </article>
+                        <article class="col-md-4">
+                            <img src="src/bcn.jpg" class="d-block w-100" alt="Proyecto 6">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Instalación solar térmica en Balmes | Barcelona</h5>
+                                <p>Descripción del Proyecto 6.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselProyectos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselProyectos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        <div class="show-more">
+            <span class="line2"></span>
+            <a href="#">MOSTRAR MÁS INSTALACIONES</a>
+            <span class="line2"></span>
+          </div>
+    </section>
+    
+    <section class="section-transition" id="nosotros" style="background-color: #f8f9fa" data-aos="fade-up">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="display-4" >Sobre nosotros</h2>
+              <p class="lead">
+                Somos una empresa dedicada a la promoción, diseño, instalación y
+                mantenimiento de sistemas de energía solar. Nuestra misión es
+                ofrecer soluciones de energía renovable de alta calidad y
+                rentables para nuestros clientes, contribuyendo así a la
+                transición hacia un futuro más sostenible. Tenemos un equipo de
+                profesionales con una amplia experiencia en el sector,
+                comprometidos con la excelencia y la satisfacción del cliente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <section class="container-fluid py-5 bg-light text-center section-transition mb-2">
+      <h2 class="mb-5 display-4" id="contacto">
+        SOLICITA TU PRESUPUESTO<br>
+        Ponte en contacto con nuestra empresa.</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card shadow">
+            <div class="card-body">
+              <i class="fas fa-phone contact-icon"></i>
+              <h4 class="card-title">Llámanos</h4>
+              <a class="card-text" href="tel:900834430">900 834 430</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card shadow">
+            <div class="card-body">
+                <i class="fas fa-envelope contact-icon"></i> 
+              <h4 class="card-title">Mándanos un correo</h4>
+              <a class="card-text" href="mailto:info@solsolar.cat">info@solsolar.cat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-6 text-center text-md-left">
+              <p class="copyright">&copy; 2023 Energías Renovables. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+              <a href="#">Términos y Condiciones</a>
+              <span>|</span>
+              <a href="#">Política de Privacidad</a>
+            </div>
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
