@@ -61,7 +61,7 @@ h2 {
 
 /*Cabezera*/
 .parallax {
-  background-image: url("/src/portada.jpg");
+  background-image: url(/src/portada.jpg);
   height: 80vh;
   background-attachment: fixed;
   background-position: center;
@@ -278,7 +278,7 @@ h2 {
 }
 
 .container-fluid {
-  background-image: url("/src/agente.jpg");
+  background-image: url(/src/agente.jpg);
   height: 50vh;
   background-attachment: fixed;
   background-position: center;
