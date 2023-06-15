@@ -19,7 +19,8 @@ body {
 
 .display-4,
 h2 {
-  color: #009;
+  /* color: #009; */
+  color: darkblue;
   font-family: "Century Gothic Bold", Sans-serif !important;
 }
 
@@ -61,8 +62,8 @@ h2 {
 
 /*Cabezera*/
 .parallax {
-  background-image: url(src/portada.jpg);
-  height: 80vh;
+  background-image: url(src/cabezeraa.jpg);
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,13 +81,17 @@ h2 {
 
 .centrado h1 {
   /* color: white; */
-  color: #fde935;
+  color: white;
   font-size: 78px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /*Nosotros*/
-
+.image-size {
+  width: 500px;
+  max-width: 500px; 
+  max-height: 300px;
+}
 
 /*Especialistas*/
 .title-line {
@@ -99,14 +104,19 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -20px; /* Puedes ajustar este valor para cambiar el margen entre el texto y la línea */
-  height: 4px; /* Ajusta el grosor de la línea aquí */
-  width: 120%; /* Aquí puedes hacer que la línea sea más larga que el texto */
-  background: linear-gradient(
+  bottom: -20px; 
+  height: 4px; 
+  width: 120%; 
+  /* background: linear-gradient(
     to right,
     red,
     yellow
-  ); /* Color de fondo que cambia */
+  );  */
+  background: linear-gradient(
+    to right,
+    rgb(1, 103, 8),
+    yellow
+  ); 
 }
 
 /******* APP **********/
@@ -115,7 +125,7 @@ h2 {
 }
 
 .learn-more {
-  background-color: #007bff; /* color del botón */
+  background-color: #007bff;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -123,12 +133,12 @@ h2 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.4s; /* tiempo de la transición */
+  transition-duration: 0.4s; 
   cursor: pointer;
 }
 
 .learn-more:hover {
-  background-color: #004c8c; /* color del botón cuando se pasa el cursor por encima */
+  background-color: #004c8c;
   color: white;
 }
 
@@ -153,8 +163,8 @@ h2 {
   color: #005394;
 }
 .line {
-  border-bottom: 2px solid #fed03d; /*ajusta el color y el grosor según tus necesidades*/
-  width: 20%; /*ajusta el ancho según tus necesidades*/
+  border-bottom: 2px solid #fed03d; 
+  width: 20%; 
   margin: 10px auto 30px;
   margin-top: -3%;
 }
