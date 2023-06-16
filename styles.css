@@ -14,32 +14,29 @@ body {
 
 .space a {
   margin-right: 20px;
-  /* color: #009 !important; */
 }
 
 .display-4,
 h2 {
-  /* color: #009; */
   color: darkblue;
   font-family: "Century Gothic Bold", Sans-serif !important;
 }
 
 .nav-link.phone {
-    color: #009 !important;
-    border: 3px solid rgba(30, 30, 158, 0.647);
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 15px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .nav-link.phone:hover {
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
-    transform: scale(1.2);
-  }
-  
+  color: #009 !important;
+  border: 3px solid rgba(30, 30, 158, 0.647);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 15px;
+  transition: transform 0.3s ease-in-out;
+}
 
-/******* SECTIONS ANIMACION **********/
+.nav-link.phone:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.2);
+}
+
+/******* SECTIONS ANIMATION **********/
 .section-transition {
   position: relative;
   z-index: 1;
@@ -60,7 +57,7 @@ h2 {
   z-index: -1;
 }
 
-/*Cabezera*/
+/******* Cabezera *******/
 .parallax {
   background-image: url(src/cabezeraa.jpg);
   height: 100vh;
@@ -80,20 +77,32 @@ h2 {
 }
 
 .centrado h1 {
-  /* color: white; */
   color: white;
-  font-size: 78px;
+  font-size: 5em;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/*Nosotros*/
+/******* Nosotros *******/
 .image-size {
   width: 500px;
-  max-width: 500px; 
+  max-width: 500px;
   max-height: 300px;
 }
 
-/*Especialistas*/
+@media (max-width: 768px) {
+  .centrado h1 {
+    font-size: 3em;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .centrado h1 {
+    font-size: 2em; 
+  }
+}
+
+/******* Especialistas *******/
 .title-line {
   position: relative;
   font-weight: bold;
@@ -104,19 +113,22 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -20px; 
-  height: 4px; 
-  width: 120%; 
+  bottom: -20px;
+  height: 4px;
+  width: 120%;
   /* background: linear-gradient(
     to right,
     red,
     yellow
   );  */
-  background: linear-gradient(
-    to right,
-    rgb(1, 103, 8),
-    yellow
-  ); 
+  background: linear-gradient(to right, rgb(1, 103, 8), yellow);
+}
+
+@media (max-width: 768px) {
+  .image-size {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /******* APP **********/
@@ -133,7 +145,7 @@ h2 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.4s; 
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
@@ -142,19 +154,20 @@ h2 {
   color: white;
 }
 
-.row h2{
-    margin-top: 9%;
+.row h2 {
+  margin-top: 9%;
 }
-.row p, img{
-    margin-bottom: 5%;
-}
-
-.row img{
-    border-radius: 2%;
-    margin-top: 5%;
+.row p,
+img {
+  margin-bottom: 5%;
 }
 
-/******* CARROUSEL **********/
+.row img {
+  border-radius: 2%;
+  margin-top: 5%;
+}
+
+/******* CAROUSEL **********/
 .project {
   font-family: "Raleway, Arial, Helvetica, sans-serif" !important;
   font-weight: 300px;
@@ -163,8 +176,8 @@ h2 {
   color: #005394;
 }
 .line {
-  border-bottom: 2px solid #fed03d; 
-  width: 20%; 
+  border-bottom: 2px solid #fed03d;
+  width: 20%;
   margin: 10px auto 30px;
   margin-top: -3%;
 }
@@ -278,13 +291,13 @@ h2 {
   background-color: wheat;
 }
 
-/*CONTACTO*/
+/******* CONTACT *******/
 #contacto {
-    font-family: "Raleway, Arial, Helvetica, sans-serif" !important;
-    font-weight: 350px;
-    text-align: center;
-    font-size: 46.752px;
-    color: white;
+  font-family: "Raleway, Arial, Helvetica, sans-serif" !important;
+  font-weight: 30%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
 }
 
 .container-fluid {
@@ -297,6 +310,8 @@ h2 {
 }
 
 .contact-card {
+  max-width: 100%;
+  height: auto;
   border: none;
   transition: transform 0.2s;
 }
@@ -312,14 +327,29 @@ h2 {
 }
 
 .card-text {
-  font-size: 1.2rem; 
-  color: #007bff; 
-  text-decoration: none; 
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
 }
 
 .card-text:hover {
-  color: #0056b3; 
+  color: #0056b3;
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  #contacto {
+    font-size: 1.5rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .contact-icon {
+    font-size: 2rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
 }
 
 /******* FOOTER **********/
