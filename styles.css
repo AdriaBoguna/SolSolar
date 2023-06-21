@@ -6,6 +6,12 @@ body {
   padding: 0px;
 }
 
+.display-4,
+h2 {
+  color: darkblue;
+  font-family: "Century Gothic Bold", Sans-serif !important;
+}
+
 /******* NAV **********/
 .navbar {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -14,26 +20,6 @@ body {
 
 .space a {
   margin-right: 20px;
-}
-
-.display-4,
-h2 {
-  color: darkblue;
-  font-family: "Century Gothic Bold", Sans-serif !important;
-}
-
-.nav-link.phone {
-  color: #009 !important;
-  border: 3px solid rgba(30, 30, 158, 0.647);
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 15px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.nav-link.phone:hover {
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
-  transform: scale(1.2);
 }
 
 /******* SECTIONS ANIMATION **********/
@@ -121,7 +107,7 @@ h2 {
     red,
     yellow
   );  */
-  background: linear-gradient(to right, rgb(1, 103, 8), yellow);
+  background: linear-gradient(to right, orange, yellow);
 }
 
 @media (max-width: 768px) {
@@ -294,10 +280,11 @@ img {
 /******* CONTACT *******/
 #contacto {
   font-family: "Raleway, Arial, Helvetica, sans-serif" !important;
-  font-weight: 30%;
+  font-weight: 300;
   text-align: center;
   font-size: 3rem;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .container-fluid {
@@ -309,48 +296,22 @@ img {
   background-size: cover;
 }
 
-.contact-card {
-  max-width: 100%;
-  height: auto;
-  border: none;
-  transition: transform 0.2s;
+.contact-text {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.contact-card:hover {
-  transform: scale(1.03);
+.contact-text a {
+  color: #f7b731; /* puedes cambiarlo al color que prefieras */
 }
 
-.contact-icon {
-  font-size: 3rem;
-  color: #007bff;
-  margin-bottom: 1rem;
+.btn-primary {
+  background-color: #f7b731; /* puedes cambiarlo al color que prefieras */
+  border-color: #f7b731; /* puedes cambiarlo al color que prefieras */
 }
 
-.card-text {
-  font-size: 1.2rem;
-  color: #007bff;
-  text-decoration: none;
-}
 
-.card-text:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-@media (max-width: 576px) {
-  #contacto {
-    font-size: 1.5rem;
-  }
-  .card-title {
-    font-size: 1rem;
-  }
-  .contact-icon {
-    font-size: 2rem;
-  }
-  .card-text {
-    font-size: 0.9rem;
-  }
-}
 
 /******* FOOTER **********/
 .footer {

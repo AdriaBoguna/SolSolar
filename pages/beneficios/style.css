@@ -1,0 +1,19 @@
+.top{
+    margin-top: 8%;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+body{
+    background-color: ivory;
+}
+
+.shadow{
+    --e-global-color-primary: #22D1D6;
+    --e-global-color-secondary: #005F65;
+    --e-global-color-text: #E1E71E;
+    --e-global-color-accent: #61CE70;
+}

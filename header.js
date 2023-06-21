@@ -1,14 +1,14 @@
-//Animacion de sections
-window.addEventListener("load", () => {
-  AOS.init();
-});
-
 //Cambiar bandera
 $(document).ready(function(){
   $(".dropdown-item").click(function(){
       var bandera = $(this).data('bandera');
       $("#bandera-idioma").attr("src", bandera);
   });
+});
+
+//Animacion de sections
+window.addEventListener("load", () => {
+  AOS.init();
 });
 
 //Carrusel
@@ -31,3 +31,9 @@ $('#carouselProyectos').on('slide.bs.carousel', function (e) {
     }
   }
 });
+
+//Preguntas
+$('.btn-link').click(function() {
+  $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+});
+

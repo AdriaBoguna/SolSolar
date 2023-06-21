@@ -1,0 +1,92 @@
+<style>
+  .navbar {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.space a {
+  margin-right: 20px;
+}
+</style>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../src/log.png" alt="Logo" width="80" height="55" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-2">
+          <li class="nav-item space">
+            <a class="nav-link" href="/pages/pasado/pasado.html">Origen</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link" href="/pages/actualidad/actualidad.html">Actualidad</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link" href="/pages/app/app.html">APP</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link" href="/pages/beneficios/beneficios.html">Beneficios</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link" href="/pages/noticias/noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item space">
+            <a class="nav-link" href="/pages/contacto/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="idioma"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Idioma
+              <img
+                src="../../src/españa.png"
+                alt="Idioma"
+                id="bandera-idioma"
+                height="20px"
+              />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="idioma">
+              <a
+                class="dropdown-item"
+                href="#"
+                data-bandera="../../src/catalunya.png"
+              >
+                <img src="../../src/catalunya.png" alt="Catalán" height="20px" />
+                Català
+              </a>
+              <a class="dropdown-item" href="#" data-bandera="src/españa.png">
+                <img src="../../src/españa.png" alt="Castellano" height="20px" />
+                Castellano
+              </a>
+              <a class="dropdown-item" href="#" data-bandera="src/america.png">
+                <img src="../../src/reino-unido.png" alt="Inglés" height="20px" />
+                English
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
